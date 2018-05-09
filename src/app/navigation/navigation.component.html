@@ -1,0 +1,57 @@
+<mat-card>
+    <mat-card-header>
+    <mat-card-title><h2>Menu</h2></mat-card-title>    
+  </mat-card-header>
+  <mat-card-content>
+    <mat-divider></mat-divider>
+    <br>
+    <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <mat-icon>dialpad</mat-icon>
+    <span>Redial</span>
+  </button>
+  <button mat-menu-item disabled>
+    <mat-icon>voicemail</mat-icon>
+    <span>Check voicemail</span>
+  </button>
+  <button mat-menu-item>
+    <mat-icon>notifications_off</mat-icon>
+    <span>Disable alerts</span>
+  </button>
+</mat-menu>
+  
+  </mat-card-content>
+
+  </mat-card>
+<br>
+<mat-card>
+    <mat-card-header>
+    <mat-card-title><h2>Toolbar</h2></mat-card-title>    
+  </mat-card-header>
+  <mat-card-content>
+    <mat-divider></mat-divider>
+    <br>
+   <mat-toolbar color="primary">
+<mat-toolbar-row>
+    <span>Custom Toolbar</span>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <span>Second Line</span>
+    <span class="example-spacer"></span>
+    <mat-icon class="example-icon">verified_user</mat-icon>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <span>Third Line</span>
+    <span class="example-spacer"></span>
+    <mat-icon class="example-icon">favorite</mat-icon>
+    <mat-icon class="example-icon">delete</mat-icon>
+  </mat-toolbar-row>
+</mat-toolbar>
+  
+  </mat-card-content>
+
+  </mat-card>
+<br>
